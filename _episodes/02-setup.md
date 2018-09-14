@@ -24,8 +24,8 @@ where `verb` is what we actually want to do. So here is how
 Dracula sets up his new laptop:
 
 ~~~
-$ git config --global user.name "Vlad Dracula"
-$ git config --global user.email "vlad@tran.sylvan.ia"
+$ git config --global user.name "Hadley Scientist"
+$ git config --global user.email "hadley@laboratory.edu"
 ~~~
 {: .language-bash}
 

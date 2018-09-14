@@ -26,7 +26,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-/home/vlad/Desktop/planets
+/home/hadley/Desktop/planets
 ~~~
 {: .output}
 
@@ -37,7 +37,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-/home/vlad/Desktop/planets/moons
+/home/hadley/Desktop/planets/moons
 ~~~
 {: .output}
 ~~~
@@ -192,7 +192,7 @@ $ git log
 
 ~~~
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Hadley Scientist <hadley@laboratory.edu>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base
@@ -481,19 +481,19 @@ $ git log
 
 ~~~
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Hadley Scientist <hadley@laboratory.edu>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
     Discuss concerns about Mars' climate for Mummy
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Hadley Scientist <hadley@laboratory.edu>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Add concerns about effects of Mars' moons on Wolfman
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Hadley Scientist <hadley@laboratory.edu>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Start notes on Mars as a base
@@ -537,7 +537,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 >
 > ~~~
 > commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-> Author: Vlad Dracula <vlad@tran.sylvan.ia>
+> Author: Hadley Scientist <hadley@laboratory.edu>
 > Date:   Thu Aug 22 10:14:07 2013 -0400
 >
 >    Discuss concerns about Mars' climate for Mummy
@@ -790,7 +790,7 @@ repository (`git commit`):
 > When committing you can name someone else as the author:
 >
 > ~~~
-> $ git commit --author="Vlad Dracula <vlad@tran.sylvan.ia>"
+> $ git commit --author="Hadley Scientist <hadley@laboratory.edu>"
 > ~~~
 > {: .language-bash}
 >
@@ -803,26 +803,26 @@ repository (`git commit`):
 > >
 > > ~~~
 > > $ git add me.txt
-> > $ git commit -m "Update Vlad's bio." --author="Frank N. Stein <franky@monster.com>"
+> > $ git commit -m "Update Hadley's bio." --author="Harley Labtech <harley@otherlab.edu>"
 > > ~~~
 > > {: .language-bash}
 > > ~~~
-> > [master 4162a51] Update Vlad's bio.
-> > Author: Frank N. Stein <franky@monster.com>
+> > [master 4162a51] Update Hadley's bio.
+> > Author: Harley Labtech <harley@otherlab.edu>
 > > 1 file changed, 2 insertions(+), 2 deletions(-)
 > >
 > > $ git log --format=full
 > > commit 4162a51b273ba799a9d395dd70c45d96dba4e2ff
-> > Author: Frank N. Stein <franky@monster.com>
-> > Commit: Vlad Dracula <vlad@tran.sylvan.ia>
+> > Author: Harley Labtech <harley@otherlab.edu>
+> > Author: Hadley Scientist <hadley@laboratory.edu>
 > >
-> > Update Vlad's bio.
+> > Update Hadley's bio.
 > >
 > > commit aaa3271e5e26f75f11892718e83a3e2743fab8ea
-> > Author: Vlad Dracula <vlad@tran.sylvan.ia>
-> > Commit: Vlad Dracula <vlad@tran.sylvan.ia>
+> > Author: Hadley Scientist <hadley@laboratory.edu>
+> > Commmit: Hadley Scientist <hadley@laboratory.edu>
 > >
-> > Vlad's initial bio.
+> > Hadley's initial bio.
 > > ~~~
 > > {: .output}
 > {: .solution}

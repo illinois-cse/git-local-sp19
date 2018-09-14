@@ -14,11 +14,8 @@ keypoints:
 Once Git is configured,
 we can start using it.
 
-We will continue with the story of Wolfman and Dracula who are investigating if it
+We will continue with the story where you are investigating if it
 is possible to send a planetary lander to Mars. 
-
-![motivatingexample](../fig/motivatingexample.png)
-
 
 First, let's create a directory in `Desktop` folder for our work and then move into that directory:
 
@@ -92,8 +89,8 @@ wording of the output might be slightly different.
 > ## Places to Create Git Repositories
 >
 > Along with tracking information about planets (the project we have already created), 
-> Dracula would also like to track information about moons.
-> Despite Wolfman's concerns, Dracula creates a `moons` project inside his `planets` 
+> Your associate, Tobey, would also like to track information about moons.
+> Despite your concerns, Tobey creates a `moons` project inside your `planets` 
 > project with the following sequence of commands:
 >
 > ~~~
@@ -112,10 +109,10 @@ wording of the output might be slightly different.
 > 
 > > ## Solution
 > >
-> > No. Dracula does not need to make the `moons` sub-directory a Git repository 
+> > No. Tobey does not need to make the `moons` sub-directory a Git repository 
 > > because the `planets` repository will track all files, sub-directories, and 
 > > sub-directory files under the `planets` directory.  Thus, in order to track 
-> > all information about moons, Dracula only needed to add the `moons` sub-directory
+> > all information about moons, your collaborator only needed to add the `moons` sub-directory
 > > to the `planets` directory.
 > > 
 > > Additionally, Git repositories can interfere with each other if they are "nested":
@@ -137,13 +134,14 @@ wording of the output might be slightly different.
 > {: .solution}
 {: .challenge}
 > ## Correcting `git init` Mistakes
-> Wolfman explains to Dracula how a nested repository is redundant and may cause confusion
-> down the road. Dracula would like to remove the nested repository. How can Dracula undo 
-> his last `git init` in the `moons` sub-directory?
+> Another scientist in the group, Harley, explains to Tobey how a nested repository 
+> is redundant and may cause confusion
+> down the road. Tobey would like to remove the nested repository. How can Tobey undo 
+> their last `git init` in the `moons` sub-directory?
 >
 > > ## Solution -- USE WITH CAUTION!
 > >
-> > To recover from this little mistake, Dracula can just remove the `.git`
+> > To recover from this little mistake, Tobey can just remove the `.git`
 > > folder in the moons subdirectory by running the following command from inside the `planets` directory:
 > >
 > > ~~~
