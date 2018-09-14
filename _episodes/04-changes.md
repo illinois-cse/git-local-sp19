@@ -229,7 +229,7 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The night will reduce the effectiveness of the rover solar panels
 ~~~
 {: .output}
 
@@ -276,7 +276,7 @@ index df0654a..315bf3a 100644
 +++ b/mars.txt
 @@ -1 +1,2 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The night will reduce the effectiveness of the rover solar panels
 ~~~
 {: .output}
 
@@ -299,7 +299,7 @@ If we break it down into pieces:
 After reviewing our change, it's time to commit it:
 
 ~~~
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add concerns about effects of Mars' night on the solar panels"
 $ git status
 ~~~
 {: .language-bash}
@@ -322,12 +322,12 @@ Let's fix that:
 
 ~~~
 $ git add mars.txt
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Add concerns about effects of Mars' night on the solar panels"
 ~~~
 {: .language-bash}
 
 ~~~
-[master 34961b1] Add concerns about effects of Mars' moons on Wolfman
+[master 34961b1] Add concerns about effects of Mars' night on the solar panels
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -385,8 +385,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The night will reduce the effectiveness of the rover solar panels
+The lack of atmosphere will require radiation-hardened electronics
 ~~~
 {: .output}
 
@@ -402,8 +402,8 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+The night will reduce the effectiveness of the rover solar panels
++The lack of atmosphere will require radiation-hardened electronics
 ~~~
 {: .output}
 
@@ -437,9 +437,9 @@ index 315bf3a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
- Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+Cold and dry, but everything is my favorite color
+The night will reduce the effectiveness of the rover solar panels
++The lack of atmosphere will require radiation-hardened electronics
 ~~~
 {: .output}
 
@@ -449,12 +449,12 @@ and what's in the staging area.
 Let's save our changes:
 
 ~~~
-$ git commit -m "Discuss concerns about Mars' climate for Mummy"
+$ git commit -m "Discuss concerns about Mars' atmosphere for electronics"
 ~~~
 {: .language-bash}
 
 ~~~
-[master 005937f] Discuss concerns about Mars' climate for Mummy
+[master 005937f] Discuss concerns about Mars' atmosphere for electronics
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -484,13 +484,13 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
 Author: Hadley Scientist <hadley@laboratory.edu>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Discuss concerns about Mars' climate for Mummy
+    Discuss concerns about Mars' atmosphere for electronics
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Hadley Scientist <hadley@laboratory.edu>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Add concerns about effects of Mars' moons on Wolfman
+    Add concerns about effects of Mars' night on the solar panels
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
 Author: Hadley Scientist <hadley@laboratory.edu>
@@ -540,7 +540,7 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > Author: Hadley Scientist <hadley@laboratory.edu>
 > Date:   Thu Aug 22 10:14:07 2013 -0400
 >
->    Discuss concerns about Mars' climate for Mummy
+>    Discuss concerns about Mars' atmosphere for electronics
 > ~~~
 > {: .output}
 >
@@ -552,8 +552,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> * 005937f Discuss concerns about Mars' atmosphere on electronics
+> * 34961b1 Add concerns about effects of Mars' night on solar panels
 > * f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}
@@ -566,8 +566,8 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
 > ~~~
 > {: .language-bash}
 > ~~~
-> * 005937f Discuss concerns about Mars' climate for Mummy (HEAD, master)
-> * 34961b1 Add concerns about effects of Mars' moons on Wolfman
+> * 005937f Discuss concerns about Mars' atmosphere on electronics (HEAD, master)
+> * 34961b1 Add concerns about effects of Mars' night on solar panels
 > * f22b25e Start notes on Mars as a base
 > ~~~
 > {: .output}
@@ -618,8 +618,8 @@ repository (`git commit`):
 > last commit made to `mars.txt`?
 >
 > 1. "Changes"
-> 2. "Added line 'But the Mummy will appreciate the lack of humidity' to mars.txt"
-> 3. "Discuss effects of Mars' climate on the Mummy"
+> 2. "Added line 'The lack of atmosphere will require radiation-hardened electronics' to mars.txt"
+> 3. "Discuss effects of Mars' atmosphere on electronics"
 >
 > > ## Solution
 > > Answer 1 is not descriptive enough, and the purpose of the commit is unclear;

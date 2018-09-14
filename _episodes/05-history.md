@@ -32,8 +32,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The night will reduce the effectiveness of the rover solar panels
+The lack of atmosphere will require radiation-hardened electronics
 An ill-considered change
 ~~~
 {: .output}
@@ -51,9 +51,9 @@ index b36abfd..0848c8d 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1,3 +1,4 @@
- Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
- But the Mummy will appreciate the lack of humidity
+Cold and dry, but everything is my favorite color
+The night will reduce the effectiveness of the rover solar panels
+The lack of atmosphere will require radiation-hardened electronics
 +An ill-considered change.
 ~~~
 {: .output}
@@ -84,9 +84,9 @@ index df0654a..b36abfd 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,4 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+Cold and dry, but everything is my favorite color
++The night will reduce the effectiveness of the rover solar panels
++The lack of atmosphere will require radiation-hardened electronics
 +An ill-considered change
 ~~~
 {: .output}
@@ -145,9 +145,9 @@ index df0654a..93a3e13 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,4 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+Cold and dry, but everything is my favorite color
++The night will reduce the effectiveness of the rover solar panels
++The lack of atmosphere will require radiation-hardened electronics
 +An ill-considered change
 ~~~
 {: .output}
@@ -167,9 +167,9 @@ index df0654a..93a3e13 100644
 --- a/mars.txt
 +++ b/mars.txt
 @@ -1 +1,4 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
-+But the Mummy will appreciate the lack of humidity
+Cold and dry, but everything is my favorite color
++The night will reduce the effectiveness of the rover solar panels
++The lack of atmosphere will require radiation-hardened electronics
 +An ill-considered change
 ~~~
 {: .output}
@@ -221,8 +221,8 @@ $ cat mars.txt
 
 ~~~
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-But the Mummy will appreciate the lack of humidity
+The night will reduce the effectiveness of the rover solar panels
+The lack of atmosphere will require radiation-hardened electronics
 ~~~
 {: .output}
 
