@@ -217,7 +217,7 @@ and the log message Git was given when the commit was created.
 > (and so that we can't accidentally edit or delete an old version).
 {: .callout}
 
-Now suppose Dracula adds more information to the file.
+Now suppose Hadley adds more information to the file.
 (Again, we'll edit with `nano` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
