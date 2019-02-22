@@ -108,7 +108,7 @@ wording of the output might be slightly different.
 >
 > Along with tracking information about planets (the project we have already created), 
 > Your associate, Tobey, would also like to track information about moons.
-> Despite your concerns, Tobey creates a `moons` project inside your `planets` 
+> Despite your concerns, Tobey creates a `moons` project next to your `planets` 
 > project with the following sequence of commands:
 >
 > ~~~
