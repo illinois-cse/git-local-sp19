@@ -25,7 +25,7 @@ progress by looking, so let's do that using our `HEAD`s.  Before we start,
 let's make a change to `mars.txt`.
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 $ cat mars.txt
 ~~~
 {: .language-bash}
@@ -180,7 +180,7 @@ can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 $ cat mars.txt
 ~~~
 {: .language-bash}

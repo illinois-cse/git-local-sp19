@@ -50,7 +50,7 @@ so let's tell Git to ignore them.
 We do this by creating a file in the root directory of our project called `.gitignore`:
 
 ~~~
-$ nano .gitignore
+$ atom .gitignore
 $ cat .gitignore
 ~~~
 {: .language-bash}

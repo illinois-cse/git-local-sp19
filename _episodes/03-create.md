@@ -15,12 +15,22 @@ Once Git is configured,
 we can start using it.
 
 We will continue with the story where you are investigating if it
-is possible to send a planetary lander to Mars. 
+is possible to send a planetary lander to Mars. Luckily, our collaborator has
+already started a repository for us to share!
 
-First, let's create a directory in `Desktop` folder for our work and then move into that directory:
+First, let's clone the repository our collaborator has made from our `Desktop`
+and then move into it:
 
 ~~~
 $ cd ~/Desktop
+$ git clone https://github.com/illinois-cse/git-local-sp19.git 
+$ cd git-local-sp19
+~~~
+
+We want to take notes on the planet Mars, so let's make a folder in this
+repository for our work: 
+
+~~~
 $ mkdir planets
 $ cd planets
 ~~~
@@ -29,7 +39,14 @@ $ cd planets
 Then we tell Git to make `planets` a [repository]({{ page.root }}/reference#repository)—a place where
 Git can store versions of our files:
 
+
+Alternatively, we could start a new repository from the command line without
+using the clone command. That would look like this:
+
 ~~~
+$ cd ~/Desktop
+$ mkdir planets
+$ cd planets
 $ git init
 ~~~
 {: .language-bash}
@@ -50,7 +67,8 @@ $ ls
 {: .language-bash}
 
 But if we add the `-a` flag to show everything,
-we can see that Git has created a hidden directory within `planets` called `.git`:
+we can see that Git has created a hidden directory within `planets` called `.git`. In our 
+cloned repository, the .git folder is located at `/git-local-sp19/.git`:
 
 ~~~
 $ ls -a
@@ -94,13 +112,13 @@ wording of the output might be slightly different.
 > project with the following sequence of commands:
 >
 > ~~~
-> $ cd ~/Desktop   # return to Desktop directory
-> $ cd planets     # go into planets directory, which is already a Git repository
-> $ ls -a          # ensure the .git sub-directory is still present in the planets directory
-> $ mkdir moons    # make a sub-directory planets/moons
-> $ cd moons       # go into moons sub-directory
-> $ git init       # make the moons sub-directory a Git repository
-> $ ls -a          # ensure the .git sub-directory is present indicating we have created a new Git repository
+> $ cd ~/Desktop          # return to Desktop directory
+> $ cd git-local-sp19     # go into git-local-sp19 directory, which is already a Git repository
+> $ ls -a                 # ensure the .git sub-directory is still present in the planets directory
+> $ mkdir moons           # make a sub-directory git-local-sp19/moons
+> $ cd moons              # go into moons sub-directory
+> $ git init              # make the moons sub-directory a Git repository
+> $ ls -a                 # ensure the .git sub-directory is present indicating we have created a new Git repository
 > ~~~
 > {: .language-bash}
 >
@@ -110,10 +128,10 @@ wording of the output might be slightly different.
 > > ## Solution
 > >
 > > No. Tobey does not need to make the `moons` sub-directory a Git repository 
-> > because the `planets` repository will track all files, sub-directories, and 
-> > sub-directory files under the `planets` directory.  Thus, in order to track 
+> > because the `git-local-sp19` repository will track all files, sub-directories, and 
+> > sub-directory files under the `git-local-sp19` directory.  Thus, in order to track 
 > > all information about moons, your collaborator only needed to add the `moons` sub-directory
-> > to the `planets` directory.
+> > to the `git-local-sp19` directory.
 > > 
 > > Additionally, Git repositories can interfere with each other if they are "nested":
 > > the outer repository will try to version-control

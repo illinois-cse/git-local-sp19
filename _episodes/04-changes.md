@@ -26,7 +26,7 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-/home/hadley/Desktop/planets
+/home/hadley/Desktop/git-local-sp19/planets
 ~~~
 {: .output}
 
@@ -37,22 +37,22 @@ $ pwd
 ~~~
 {: .language-bash}
 ~~~
-/home/hadley/Desktop/planets/moons
+/home/hadley/Desktop/git-local-sp19/moons
 ~~~
 {: .output}
 ~~~
-$ cd ..
+$ cd ../planets
 ~~~
 {: .language-bash}
 
 Let's create a file called `mars.txt` that contains some notes
 about the Red Planet's suitability as a base.
-We'll use `nano` to edit the file;
+We'll use `atom` to edit the file;
 you can use whatever editor you like.
-In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the bash command to create or edit a new file will depend on the editor you choose (it might not be `nano`). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create/) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
+In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the bash command to create or edit a new file will depend on the editor you choose (it might not be `atom`). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create/) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 ~~~
 {: .language-bash}
 
@@ -161,7 +161,7 @@ Your commit may have another identifier.
 We use the `-m` flag (for "message")
 to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
 If we just run `git commit` without the `-m` option,
-Git will launch `nano` (or whatever other editor we configured as `core.editor`)
+Git will launch `atom` (or whatever other editor we configured as `core.editor`)
 so that we can write a longer message.
 
 [Good commit messages][commit-messages] start with a brief (<50 characters) statement about the
@@ -218,11 +218,11 @@ and the log message Git was given when the commit was created.
 {: .callout}
 
 Now suppose Hadley adds more information to the file.
-(Again, we'll edit with `nano` and then `cat` the file to show its contents;
+(Again, we'll edit with `atom` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 $ cat mars.txt
 ~~~
 {: .language-bash}
@@ -378,7 +378,7 @@ First,
 we'll add another line to the file:
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 $ cat mars.txt
 ~~~
 {: .language-bash}
@@ -677,7 +677,7 @@ repository (`git commit`):
 > >
 > > First we make our changes to the `mars.txt` and `venus.txt` files:
 > > ~~~
-> > $ nano mars.txt
+> > $ atom mars.txt
 > > $ cat mars.txt
 > > ~~~
 > > {: .language-bash}
@@ -686,7 +686,7 @@ repository (`git commit`):
 > > ~~~
 > > {: .output}
 > > ~~~
-> > $ nano venus.txt
+> > $ atom venus.txt
 > > $ cat venus.txt
 > > ~~~
 > > {: .language-bash}
@@ -754,7 +754,7 @@ repository (`git commit`):
 > > ~~~
 > > {: .language-bash}
 > >
-> > Create your biography file `me.txt` using `nano` or another text editor.
+> > Create your biography file `me.txt` using `atom` or another text editor.
 > > Once in place, add and commit it to the repository:
 > >
 > > ~~~
